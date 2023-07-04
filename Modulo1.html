@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas por temporada</title>
+     <!--Cambiar icono del navegador -->
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWjbVH_fiOrLwbaUWHJJJtWTspw9umj8nAQ&usqp=CAU">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Modulo1.CSS">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="barra">
+    <a class="navbar-brand text-white" href="#">AgroInforma</a>
+    <!-- Otros elementos de la barra de navegación -->
+  </nav>
+  <div class="Fondo">
+    <h1 id="Portada">Frutas por temporada</h1>
+    <p id="texto_titulo">¿Alguna vez te has preguntado por qué la fruta que compras no siempre tiene el sabor que esperabas?<br>
+       Para consumir tus frutas favoritas con el sabor que recuerdas de tu infancia es importante conocer la estación<br>
+        en que estas se cosechan. A continuación te contamos esto con más detalle.</p>
+  </div>
+  <!--Código en JS>-->
+  <script src="Modulo1.js"></script
+  <!--Para hacer correr bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+  <!--Generando el Dropdwns-->
+ <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Estaciones
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Otoño</a></li>
+    <li><a href="#">Invierno</a></li>
+    <li><a href="#">Primavera</a></li>
+    <li><a href="#">Verano</a></li>
+  </ul>
+</div>
+ 
+     <!--Titulo frutas de otoño -->
+     <div class="container-fluid">
+      <h2 id="Titulo_estacion">Otoño</h2>
+      <p id="Parrafos_ot">El otoño es una estación extraordinaria que presenta un despliegue magistral de colores en la naturaleza, donde cada hoja caída parece pintar un lienzo con los tonos más cálidos y ricos. En medio de esta paleta otoñal, emerge un festival de frutas maravillosas, ofreciendo un deleite culinario que también es un tesoro para la salud. </p>
+     </div>
+
+  
+
+  <!--Generar carousel Otoño-->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow-->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Manzana_s.png" alt="Manzana" height="500" width="500">
+        <div class="carousel-caption" id="otoño_caption">
+          <h3>Manzana</h3>
+          <p>Las manzanas son una de las frutas más emblemáticas del otoño, conocidas por su versatilidad y variedad de sabores y texturas. A medida que las hojas cambian de color y las temperaturas comienzan a bajar, las manzanas maduran en los árboles, listas para ser cosechadas. Los tipos comunes de manzanas de otoño incluyen la Granny Smith, la Gala, la Honeycrisp, y la Fuji, entre otras, cada una con su sabor distintivo y su perfil nutricional.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Pera_s.png" alt="Pera" height="500" width="500">
+        <div class="carousel-caption" id="otoño_caption">
+          <h3>Pera</h3>
+          <p>Las peras son otra joya de la estación otoñal, ofreciendo una textura suave y un sabor dulce y delicado. Durante el otoño, las peras alcanzan su punto máximo de madurez, transformándose en un manjar jugoso y aromático. Entre las variedades de peras más comunes de esta temporada, encontrarás la Bartlett, Bosc, Anjou y Comice, cada una con sus propias características únicas de sabor y textura.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Kiwi_sf.png" alt="Kiwi" height="500" width="500">
+        <div class="carousel-caption" id="otoño_caption">
+          <h3>Kiwi</h3>
+          <p>El kiwi, a pesar de su pequeño tamaño, es una fruta con una gran personalidad y un aporte nutricional impresionante. Aunque se pueda disfrutar durante todo el año en muchos lugares, el kiwi alcanza su punto máximo de sabor y frescura durante los meses de otoño e invierno.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+
+  <!--Titulo frutas de invierno -->
+  <div class="container-fluid">
+    <h2 id="Titulo_estacion">Invierno</h2>
+    <p id="Parrafos_iv">El invierno, con su aire fresco y cielos claros, trae consigo un cambio en el ritmo de la vida, una transición suave hacia un tiempo más tranquilo y contemplativo. En medio de paisajes invernales teñidos de blanco, la naturaleza nos ofrece un festín de frutas llenas de sabor y nutrición.</p>
+  </div>
+
+  <!--Generar carousel Invierno-->
+  <div id="demo_dos" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow-->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Naranjas.jpg" alt="Naranja" height="500" width="500" class="rounded-circle">
+        <div class="carousel-caption" id="invierno_caption">
+          <h3>Naranjas</h3>
+          <p>Las naranjas, con su brillante coloración cítrica y su sabor dulce y ligeramente ácido, son una verdadera delicia invernal. Aunque están disponibles durante todo el año en muchas partes del mundo, las naranjas alcanzan su pico de dulzura y jugosidad durante los meses de invierno, convirtiéndose en una fuente de sol en los días fríos y grises.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Mandarina.jpg" alt="Mandarina" height="500" width="500" class="rounded-circle">
+        <div class="carousel-caption" id="invierno_caption">
+          <h3>Mandarina</h3>
+          <p>Las mandarinas, pequeñas y brillantes, son verdaderos regalos de invierno. Estos cítricos dulces y ligeramente ácidos son perfectos para la temporada fría, ya que alcanzan su plenitud de sabor en los meses de invierno. Fáciles de pelar y llenas de gajos jugosos, las mandarinas son perfectas para un bocadillo rápido, ofreciendo un estallido de sabor refrescante.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo_dos" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo_dos" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+
+  <!--Titulo frutas de primavera -->
+  <div class="container-fluid">
+    <h2 id="Titulo_estacion">Primavera</h2>
+    <p id="Parrafos_pr">La primavera es un respiro lleno de vida, un despertar vibrante después del sueño invernal. El mundo se viste con un manto de flores, la brisa es suave y dulce, y los días se alargan bajo cielos azules. En este despertar de la naturaleza, surge un abanico de frutas frescas que reflejan la vitalidad de la estación.</p>
+  </div>
+
+  <!--Generar carousel Invierno-->
+  <div id="demo_tres" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow-->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Frutillas.jpg" alt="Frutilla" height="500" width="500" class="rounded">
+        <div class="carousel-caption" id="invierno_caption">
+          <h3>Frutilla</h3>
+          <p>Las frutillas, también conocidas como fresas en muchos países, son una de las delicias más esperadas de la primavera. Estas bayas jugosas y llenas de sabor marcan el inicio de una temporada llena de abundancia y frescura. Con su color rojo brillante y su dulzura natural, las frutillas encarnan la alegría y la vitalidad de la primavera.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Cerezas.jpeg" alt="Cereza" height="500" width="500" class="rounded">
+        <div class="carousel-caption" id="invierno_caption">
+          <h3>Cereza</h3>
+          <p>Las cerezas son una fruta de primavera y verano que se celebra por su sabor dulce y ligeramente ácido, así como por su hermoso color rojo o púrpura oscuro. Su aparición en los mercados anuncia el final de la primavera y el comienzo del verano, y son muy esperadas por su sabor único y su textura jugosa.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo_tres" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo_tres" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+
+  <!--Footer-->
+  <footer class="footer bg-dark text-light" id="Footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Autor: Cristian Pérez Faúndez. AgroInforma</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

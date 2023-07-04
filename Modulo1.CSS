@@ -1,0 +1,75 @@
+.Fondo {
+    background-image: url("fondo_campo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    opacity: 0.8;
+  }
+#Portada{
+    color: white;
+    text-align: center;
+    background-color: rgba(49, 129, 153, 0.5)
+}
+
+#texto_titulo{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 30px;
+    background-color:rgba(49, 129, 153, 0.5)
+    
+
+ }
+
+Body{background-color: #048b8b;}
+
+#Titulo_estacion{
+    color: white;
+    
+    
+}
+
+
+#Parrafos_ot {
+    color: white;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    
+  }
+  #Parrafos_iv {
+    color: white;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    
+  }
+
+  #Parrafos_pr {
+    color: white;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    
+  }
+
+#demo{
+    background-color: rgba(238, 142, 87, 0.5);
+}
+
+#demo_dos{
+    background-color: rgba(49, 129, 153, 0.5);
+}
+
+#demo_tres{
+    background-color: rgba(126, 243, 165, 0.5);
+}
+
+#otoño_caption{
+    background-color: rgba(6, 218, 165, 0.3); ;
+}
+
+#invierno_caption{
+    background-color: rgba(2, 32, 25, 0.3); ;
+}
+
+/*Cambiando el color de la barra de navegación para que sea igual al footer*/
+#barra{
+    background-color: #343a40;
+}
